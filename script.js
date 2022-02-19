@@ -6,6 +6,8 @@ const colorsContainer = document.getElementById('colors-container')
 const btnChangeLevel = document.getElementById('change-level')
 const btnResetGame = document.getElementById('reset-game')
 const colors = document.getElementsByClassName('ball');
+const pAnswer = document.getElementById('answer')
+
 
 //------------------------//----------------------------------
 
@@ -43,7 +45,7 @@ function changeLevel() {
 
 function resetGame() {
   createBalls();
-
+  pAnswer.innerText = 'Escolha uma cor';
 
 }
 
