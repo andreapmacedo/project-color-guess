@@ -33,7 +33,7 @@ function getSelectedColorBall(event) {
 function createBalls() {
   colorsContainer.innerHTML = '';
   idRaffle = Math.floor(Math.random() * 6); // 0 a 5
-  console.log(idRaffle);
+  // console.log(idRaffle);
 
   const nBalls = 6;
   for (let i = 0; i < nBalls; i += 1) {
