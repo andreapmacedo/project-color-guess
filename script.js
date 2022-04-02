@@ -3,13 +3,11 @@
 const rgbParagraph = document.getElementById('rgb-color');
 const colorsContainer = document.getElementById('colors-container');
 const score = document.getElementById('score');
-let sumScore = 0;
-// -- Butons
 const btnChangeLevel = document.getElementById('change-level');
 const btnResetGame = document.getElementById('reset-game');
 const pAnswer = document.getElementById('answer');
 let idRaffle;
-// let
+let sumScore = 0;
 
 function generateRGB() {
   const red = Math.floor(Math.random() * 256);
@@ -30,9 +28,6 @@ function getSelectedColorBall(event) {
     sumScore = 0;
     score.innerHTML = sumScore;
   }
-
-  // setScoreboard(status);
-  // console.log(status);
 }
 
 function createBalls() {
@@ -54,21 +49,9 @@ function createBalls() {
 }
 
 function resetGame() {
-  // score.innerText = 0;
   createBalls();
   pAnswer.innerText = 'Escolha uma cor';
 }
-
-function setScoreboard() {
-  if (pAnswer.innerText === 'Acertou!') {
-    // sumScore += 3;
-    // score.innerText = parseFloat(score.innerHTML).toFixed(0) + sumScore;
-    createBalls();
-  } else {
-    resetGame();
-  }
-}
-setScoreboard();
 
 function changeLevel() {}
 
