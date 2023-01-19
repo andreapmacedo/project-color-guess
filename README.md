@@ -1,6 +1,6 @@
 <div align="center" >
 
-Projeto Adivinhe a cor
+## Projeto Adivinhe a cor
 
 
 <!-- ![cover](./car-shop-01.png) -->
